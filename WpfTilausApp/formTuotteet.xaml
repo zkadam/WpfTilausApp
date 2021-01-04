@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfTilausApp.formTuotteet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTilausApp"
+        mc:Ignorable="d"
+        Title="formTuotteet" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnSulje" Content="Sulje" HorizontalAlignment="Left" Margin="667,364,0,0" VerticalAlignment="Top" Width="115" Height="45" Click="btnSulje_Click"/>
+        <DataGrid x:Name="dgTuotteet" HorizontalAlignment="Left" Height="318" Margin="20,75,0,0" 
+                  VerticalAlignment="Top" Width="300" SelectionChanged="dgTuotteet_SelectionChanged" 
+                 />
+        
+
+
+
+        
+        <TextBox x:Name="txtTuoteNimi" HorizontalAlignment="Left" Height="41" Margin="449,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132"/>
+        <Button x:Name="btnDelete" Content="Poista" HorizontalAlignment="Left" Height="41" Margin="674,75,0,0" VerticalAlignment="Top" Width="108" Click="btnDelete_Click"/>
+        <TextBox x:Name="txtUusiTuoteNimi" HorizontalAlignment="Left" Height="36" Margin="109,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141"/>
+        <TextBox x:Name="txtUusiAhinta" HorizontalAlignment="Left" Height="36" Margin="270,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="btnLisaa" Content="Lisää" HorizontalAlignment="Left" Height="36" Margin="325,34,0,0" VerticalAlignment="Top" Width="85" Click="btnLisaa_Click"/>
+        <TextBox x:Name="txtAhinta" HorizontalAlignment="Left" Height="41" Margin="594,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnTallenna" Content="Tallenna" HorizontalAlignment="Left" Height="38" Margin="325,121,0,0" VerticalAlignment="Top" Width="85" Click="btnTallenna_Click"/>
+        <TextBox x:Name="txtUusiTuoteId" HorizontalAlignment="Left" Height="36" Margin="24,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" IsEnabled="False"/>
+        <TextBox x:Name="txtTuoteID" HorizontalAlignment="Left" Height="36" Margin="340,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" IsEnabled="False" RenderTransformOrigin="0.032,0.553"/>
+
+    </Grid>
+</Window>
